@@ -1,0 +1,23 @@
+{
+  "name": "yiboshi-learn",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "bootstrap": "pnpm install",
+    "serve": "node index.js",
+    "build:exe": "rimraf bin && pkg . -t win -d",
+    "build": "npm run build:exe && npm run gen:exe",
+    "gen:exe": "node ./build/generate/index.js",
+    "reinstall": "rimraf pnpm-lock.yaml && rimraf .pnpm-debug.log && rimraf node_modules && npm run bootstrap"
+  },
+  "devDependencies": {
+    "pe-library": "^0.3.0",
+    "pkg": "^5.8.0",
+    "resedit": "^1.6.0"
+  },
+  "bin": "./index.js",
+  "pkg": {
+    "outputPath": "bin"
+  }
+}

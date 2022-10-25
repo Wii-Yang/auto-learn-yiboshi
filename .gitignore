@@ -1,0 +1,6 @@
+/bin/
+/node_modules/
+
+.pnpm-debug.log
+
+.idea
