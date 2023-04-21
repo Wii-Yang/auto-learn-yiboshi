@@ -17,4 +17,4 @@ ResEdit.Resource.IconGroupEntry.replaceIconsForResource(
 
 res.outputResource(exe)
 let newBinary = exe.generate()
-fs.writeFileSync('./bin/医博士.exe', new Buffer.from(newBinary))
+fs.writeFileSync('./bin/学习医博士.exe', new Buffer.from(newBinary))

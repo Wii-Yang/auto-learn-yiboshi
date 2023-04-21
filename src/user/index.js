@@ -12,7 +12,7 @@ async function getUserList() {
   do {
     const userList = getAll()
     const nameList = userList.map(user => {
-      if (user.name) {
+      if (user.name) {0
         return user.name
       } else {
         return `${user.username}(未登录)`

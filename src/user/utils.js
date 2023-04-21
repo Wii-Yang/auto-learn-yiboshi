@@ -74,7 +74,6 @@ function getUserByUsername(username) {
   const userList = getAllUserList()
   const user = userList.find(item => item.username === username)
   if (user) {
-    console.log(`${username}：查询成功`)
     return user
   } else {
     console.log(`${username}：查询失败`)
@@ -91,7 +90,6 @@ function getUserByNumber(number) {
   const userList = getAllUserList()
   const user = userList.find((item, index) => index === number - 1)
   if (user) {
-    console.log(`${user.username}：查询成功`)
     return user
   } else {
     console.log(`查询失败`)

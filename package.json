@@ -11,10 +11,15 @@
     "gen:exe": "node ./build/generate/index.js",
     "reinstall": "rimraf pnpm-lock.yaml && rimraf .pnpm-debug.log && rimraf node_modules && npm run bootstrap"
   },
+  "dependencies": {
+    "node-cmd": "^5.0.0",
+    "selenium-webdriver": "^4.5.0"
+  },
   "devDependencies": {
     "pe-library": "^0.3.0",
     "pkg": "^5.8.0",
-    "resedit": "^1.6.0"
+    "resedit": "^1.6.0",
+    "rimraf": "^3.0.2"
   },
   "bin": "./index.js",
   "pkg": {
